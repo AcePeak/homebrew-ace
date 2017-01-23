@@ -15,7 +15,7 @@ before_install:
   - export HOMEBREW_DEVELOPER="1"
   - ulimit -n 1024
 install: 
-  - brew tap homebrew/AcePeak
+  - brew tap AcePeak/homebrew-ace
   - brew install checkcask
 before_script:
 script:
