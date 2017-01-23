@@ -3,7 +3,6 @@ os: osx
 env: OSX=10.12
 osx_image: xcode8.1
 rvm: system
-
 before_install:
   - export TRAVIS_COMMIT="$(git rev-parse --verify -q HEAD)"
   - if [ -f ".git/shallow" ]; then
@@ -18,13 +17,18 @@ before_install:
   - ln -s "$PWD" "$HOMEBREW_TAP_DIR"
   - export HOMEBREW_DEVELOPER="1"
   - ulimit -n 1024
-
-install:
-  - brew cask install basictex
-  - export PATH="$PATH:/Library/TeX/texbin"
-
+install: 
+  - brew tap homebrew/AcePeak
+  - brew install checkcask
+before_script:
 script:
   - brew test-bot
+after_success:
+after_failure:
+before_deploy:
+deploy:
+after_deploy:
+after_script:
 
 notifications:
   email:

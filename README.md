@@ -1,21 +1,19 @@
-# Homebrew TeX
+# Missing Homebrew Ace
 
-[![Build Status](https://travis-ci.org/Homebrew/homebrew-tex.svg?branch=master)](https://travis-ci.org/Homebrew/homebrew-tex)
+[![Build Status](https://travis-ci.org/AcePeak/homebrew-ace.svg?branch=master)](https://travis-ci.org/AcePeak/homebrew-ace)
 
-[![](http://imgs.xkcd.com/comics/file_extensions.png)](https://xkcd.com/1301/)
-
-This tap contains formulae that depend on [TeX](https://www.tug.org/mactex/).
+This tap contains missing formulae for the missing software manager Brew.
 
 ## How do I install these formulae?
 
-Just `brew tap homebrew/tex` and then `brew install <formula>`.
+Just `brew tap homebrew/AcePeak` and then `brew install <formula>`.
 
-If the formula conflicts with one from Homebrew/homebrew or another tap, you can `brew install homebrew/tex/<formula>`.
+If the formula conflicts with one from Homebrew/homebrew or another tap, you can `brew install homebrew/AcePeak/<formula>`.
 
 You can also install via URL:
 
 ```
-brew install https://raw.githubusercontent.com/Homebrew/homebrew-tex/master/<formula>.rb
+brew install https://raw.githubusercontent.com/Homebrew/homebrew-ace/master/<formula>.rb
 ```
 
 ## Acceptable Formulae.
